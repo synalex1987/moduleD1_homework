@@ -1,0 +1,16 @@
+{% extends 'flatpages/default.html' %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Django flatpages —{% block title %}
+        {{ flatpage.title }}
+      {% endblock %}
+    </title>
+  </head>
+  {% block content %}
+    {{ flatpage.content }}
+    {{ flatpage.content }}
+  {% endblock%}
+</html>
